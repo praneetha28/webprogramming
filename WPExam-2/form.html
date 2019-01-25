@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms to submit the comments</title>
+	 	<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+		<script src="form.js"></script>
+</head>
+<body>
+			<div class="jumbotron">
+				<!-- <form id="fom"> -->
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" id="name" placeholder="Your name" name="Name">
+				</div>
+				<div class="form-group">
+					<label for="comment">Comment:</label>
+					<textarea class="form-control" rows="5" id="comment" placeholder="Type your comment"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="pwd">Secret Key</label>
+					<input type="password" class="form-control" id="pwd" placeholder="Enter Your key" name="Password">
+				</div>
+				<button type="submit" onclick="validateForm(form)">Post comment</button>
+				<br>
+		    	<!-- List of comments -->
+		    	List of Comments:<br>
+				<textarea disabled rows="5" id= "Comment_list"></textarea>
+			<!-- </form> -->
+			</div>
+
+</body>
+</html>
